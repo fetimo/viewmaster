@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>View-Master | You are the View-Master</title>
+	<meta name="description" content="Relaunch page for the amazing View-Master!">
+	<meta name="keywords" content="view-master, retro digital, toy">
+	<link rel="stylesheet" href="aestheti.css" type="text/css">
+	<script src="js/jquery.js"></script>
+	<script src="js/splashscreen.js"></script>
+	<script>
+		$(document).ready(function () {						
+		  
+			$.localScroll();//needs to be above splash screen to load
+		  
+			$('#overview').splashScreen({
+				textLayers : [
+					'img/you-are-vm.png',
+					'img/better.png',
+					'img/new-vm.png',
+					'img/available-now.png'
+				]
+			});
+		});
+	</script>
+</head>
+<body>
+	<aside>
+	<!--fixed side navigation-->
+		<nav>
+			<ul>
+				<li><a href="#overview"><img src="img/overview.svg" alt="Select to skip to the overview section" title="Overview" width="60px"></a></li>
+				<li><a href="#features"><img src="img/features.svg" width="60px" alt="Select to skip to the features section" title="Features"></a></li>
+				<li><a href="#game"><img src="img/game.svg" width="60px"  alt="Select to skip to the game section" title="View-Master Game"></a></li>
+				<li><a href="#download"><img src="img/download.svg" width="60px" alt="Select to skip to the download section" title="Downloads"></a></li>
+			</ul>
+		</nav>
+	</aside>
+	
+	<div id="overview" class="wrapper">
+		<!--promo img-->
+		<section class="full">
+			<img src="img/intro.png" alt="The View-Master in all it's glory" title="The View-Master in all it's glory">				 
+				<h3>We listened to you</h3>
+				<ul> 
+					<li>Ergonomic design<br> 
+						<span>Comfortable to wear</span> 
+					</li> 
+					<li>Light frame<br>
+						<span>Means longer viewing times</span> 
+					</li> 
+					<li>Broadens to your needs<br> 
+						<span>SD-slot to expand with your memories</span> 
+					</li> 
+				</ul>            
+        </section>
+        <!--info-->
+        
+		<section class="threeQuarters title">
+		</section>
+	</div>
+
+<div class="snazzyBg feature">	
+	<div class="features wrapper">
+		<!--features-->
+		<section id="features" class="full hero">
+			<section class="half desc">
+				<img src="img/back-action.png">
+				<p>
+					The View-Master is like <em>nothing</em> you've used before.<br>
+					Thanks to <em>cutting-edge</em> hardware and <em>innovative</em><br> software
+					you will be transported into a world <em>unlike</em><br>any other.
+					Transform your photos into 3D marvels.<br><br>
+					With the flush, built-in SD slot you'll be immersed<br>
+					in your favourite captured moments. This is 3D without<br>
+					the hassle.<br><br>
+					Stylish yet innovative.
+				</p>
+			</section>
+			<!--<section class="half">
+			</section>-->
+		</section>
+		<section class="threeQuarters title">
+			<img src="img/unleash.png">
+		</section>
+	</div>
+</div>
+<div class="snazzyBg game">		
+	<div class="wrapper">
+		<!--game-->
+		<section class="full hero">
+			<section id="game" class="full">
+				<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now!">
+				<img alt="The Unity Web Player plugin is required to play this game. Click to install it now!" src="http://webplayer.unity3d.com/installation/getunity.png" width="193" height="63"></a>
+			</section>
+		</section>
+		<section class="threeQuarters title">
+			<img src="img/experience.png">
+		</section>
+	</div>
+</div>
+<div class="snazzyBg download">		
+	<div class="wrapper">	
+		<!--contact-->
+		<section id="download" class="full hero">
+			<section class="half">
+				<h3>What flavour are you?</h3>
+				<button>Mac</button>
+				<button>Windows</button>
+			</section>
+			<section class="half">
+			<h3>Latest Firmware</h3>
+			What's new?
+			<ul>
+				<li>Improved battery life</li>
+				<li>Added support for .tiff, .raw file formats</li>
+				<li>Fixed rare crash when multiple files were selected to open</li>
+			</ul>
+			<button>Download v2.0.1.1</button><!-- realistically, the version number should probably be 2.1 || 2.0.2 with these fixes -->
+			</section>
+		</section>
+		<section class="threeQuarters title">
+			<img src="img/take.png">
+		</section>
+	</div>
+	<!--end .wrapper-->
+</div><!--end .snazzyBg-->
+	<script src="js/scrollto.js"></script>
+	<script src="js/localscroll.js"></script>
+	
+	<!--unity web player js-->
+	<script src="http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject.js"></script>
+	<script>
+		function GetUnity() {
+			if (typeof unityObject != "undefined") {
+				return unityObject.getObjectById("game");
+			}
+			return null;
+		}
+		if (typeof unityObject != "undefined") {
+			unityObject.embedUnity("game", "unity/vm.unity3d", 920, 450);
+		}
+	</script>
+</body>
+</html>

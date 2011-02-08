@@ -1,0 +1,213 @@
+/*
+	My CSS brings all the boys to the yard,
+	and they're like, it's better than yours,
+	damn right, it's better than yours
+*/
+
+/*
+	CSS Reset
+	http://meyerweb.com/eric/tools/css/reset/
+	v2.0 | 20110126
+	License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font: 62.5%/1.5;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*
+	end reset
+*/
+
+/*
+	start grid
+*/
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+	padding: 40px 20px 0 20px;
+}
+.full {
+	float: left;
+	width: 920px;
+	margin: 0 10px 10px 10px;
+}
+.threeQuarters {
+	float: left;
+	width: 680px;
+	padding: 10px;
+	margin: 0 10px 10px 10px;
+}
+.half {
+	float: left;
+	width: 440px;
+	padding: 10px;
+	margin: 0 10px 10px 10px;
+}
+/*
+	end grid
+*/
+
+/*
+	splashscreen positioning
+*/
+#splashScreen {
+	position:fixed;
+	top: 0;
+	height: 100%;
+	width:100%;
+	background: url(img/page_bg.jpg) repeat-x #fafafa;
+}
+
+/*
+	typography
+*/
+body {
+	font-family: 'Helvetica-Light','Helvetica Light',Arial,Helvetica,sans-serif;
+	background: url(img/page_bg.jpg) #fafafa repeat-x;
+}
+em {
+	color: #ffa500;
+}
+nav a {
+	color: #000;
+	text-decoration: none;
+}
+p {
+	text-shadow:#000 0 -1px 0;
+}
+/*
+	positioning and colouring in (try to stay in the edges)
+*/
+.hero {
+	background: #212121;
+	color: #fff;
+	line-height: 2em;
+}
+
+.title {
+	margin: 30px 0 300px 0;
+	font: 5em 'HelveticaNeue-UltraLight','Helvetica Neue UltraLight','Helvetica Neue',Arial,Helvetica,sans-serif;
+	color: #ffa500;
+}
+section:last-of-type {
+	margin-bottom: 30px;
+}
+.titleSmall {
+	font-size: 0.5em;
+}
+aside nav {
+	position: fixed;
+	top: 30%;
+	left: 0;
+}
+aside nav li {
+	padding: 2px 0;
+}
+#features {
+	background: url(img/features.png) right no-repeat;
+	/* sprite way
+		background: url(img/sprites.png) 525px -200px no-repeat;
+	*/
+}
+/*
+	form stuff
+*/
+textarea {
+	float: left;
+	padding: 10px;
+	margin-top: 20px;
+	width: 300px;
+	height: 200px;
+	font-family: inherit;
+}
+input {
+	float: left;
+	padding: 10px;
+	width: 300px;
+}
+
+h3 {
+	font-weight: 900;
+	font-size: 1.3em;
+}
+
+button {
+	border-radius: 10px;
+	text-shadow: #000 0 -1px 0;
+	color: #fff;
+	background:  -webkit-gradient(linear, left bottom, left top, color-stop(0.34, rgb(184,91,9)), color-stop(0.67, rgb(222,142,3))
+	);
+}
+
+section ul {
+	list-style: inside square;
+	line-height: 1.5em;
+}
+ul span {
+	margin-left: 30px;
+}
+.snazzyBg {
+	display: inline-block;
+	width: 100%;
+}
+.feature {
+	background: url(img/spikes-top.png) top repeat-x, url(img/spikes-bottom.png) bottom repeat-x, url(img/pixel-gray.png) repeat;
+}
+.game {
+	background: url(img/old.png) repeat;	
+}
+.download {
+	background: url(img/download-bg.png);
+	border-top: 1px #000 solid;
+}
+/*
+	image sprite placing
+*/
+.clipwrapper { position: relative; height: 48px; width: 48px; }
+
+.clip { position: absolute; top: 0; left: 0; }
+
+.pos-1 { clip:rect(0 48px 48px 0); }
+.pos-2 { clip:rect(0 96px 48px 48px); left: -48px; }
+.pos-3 { clip:rect(48px 48px 96px 0); top: -48px; }
+.pos-4 { clip:rect(48px 96px 96px 48px); top: -48px; left: -48px; }
