@@ -1,0 +1,217 @@
+10
+
+dir
+0
+http://alee@vm.fetimo.com/vm/game/VM-Game/Assets
+http://alee@vm.fetimo.com/vm
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+93ddb39e-e39f-47f2-ac24-25d2d7a3be35
+
+raycast.js
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+Materials
+dir
+
+
+
+add
+
+Prefabs
+dir
+
+
+
+add
+
+lens spawn.js
+file
+
+
+
+add
+
+view.js
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+platformer.js
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+add rigidbody raycast.js
+file
+
+
+
+add
+
+weightscript.js
+file
+
+
+
+add
+
+ray2.js
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+platformEx.unity
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+spawn bolder.js
+file
+
+
+
+add
+
+followMe.js
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+particle.prefab
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+spawn.js
+file
+
+
+
+add
+
+spotlight ray.js
+file
+
+
+
+add
+
+add rigid smallball.js
+file
+
+
+
+add
+
+door_open.anim
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+force.js
+file
+
+
+
+add
+
+small ball collide.js
+file
+
+
+
+add
+

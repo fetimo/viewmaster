@@ -20,15 +20,19 @@ function Update () {
 			moveDirection = Vector3(h,0,0);
 			transform.rotation.y = 0;
 		}
-
+		
 		moveDirection *= mySpeed;
 		
 		if(Input.GetButton("Jump")){
 			moveDirection.y = jumpAmount;	
 		}
+		
 	}
+		
 		moveDirection.y -= gravity * Time.deltaTime;
+		
 		controller.Move(moveDirection * Time.deltaTime);
+	
 }
 
 function OnTriggerEnter(other : Collider){
@@ -37,4 +41,5 @@ function OnTriggerEnter(other : Collider){
 		Instantiate(burstPart, other.transform.position, other.transform.rotation);
 		Destroy(other.gameObject);	
 	}
+	
 }

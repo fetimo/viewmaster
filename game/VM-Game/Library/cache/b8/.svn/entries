@@ -1,15 +1,15 @@
 10
 
 dir
-58
-http://tstone@vm.fetimo.com/vm/game/VM-Game/Library/cache/b8
-http://tstone@vm.fetimo.com/vm
+0
+http://alee@vm.fetimo.com/vm/game/VM-Game/Library/cache/b8
+http://alee@vm.fetimo.com/vm
+add
 
 
 
-2011-01-30T17:10:49.920546Z
-7
-alee
+
+
 
 
 
@@ -31,32 +31,12 @@ file
 
 
 
+add
 
-2011-01-30T17:20:30.000000Z
-6a6c017429f5199194c15ce9e6dcac0e
-2011-01-30T17:10:49.920546Z
-7
-alee
+
+
+
+
 has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1375
+has-prop-mods
 
